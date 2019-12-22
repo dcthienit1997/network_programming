@@ -1,7 +1,7 @@
 ## Đề bài:
 Xây dựng hệ thống Client/Server cung cấp dịch vụ gửi nhận file qua mạng (tương tự giao thức FTP) với các yêu cầu sau:
 - *Client* tương tác với *Server* thông qua kết nối TCP, địa chỉ **127.0.0.1**, cổng **12345**
-- *Client* tương tác với *Server* bằng dữ liệu nhị phân (sử dụng ==DataInputStream== và ==DataOutputStream==)
+- *Client* tương tác với *Server* bằng dữ liệu nhị phân (sử dụng **DataInputStream** và **DataOutputStream**)
 - Người dùng tương tác với *Client* qua màn hình console
 - Các lệnh có thể thực hiện nhiều lần cho tới khi người dùng nhập chuỗi `QUIT` yêu cầu kết thúc
 - Người dùng có thể nhập các lệnh sau trên console:
