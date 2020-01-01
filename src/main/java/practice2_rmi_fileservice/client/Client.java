@@ -1,7 +1,6 @@
-package practice2.client;
+package practice2_rmi_fileservice.client;
 
-import practice2.server.FileImpl;
-import practice2.server.IFile;
+import practice2_rmi_fileservice.server.IFile;
 
 import java.io.*;
 import java.rmi.NotBoundException;

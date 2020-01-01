@@ -1,6 +1,6 @@
-package practice2.client;
+package practice2_rmi_fileservice.client;
 
-import practice2.server.IFile;
+import practice2_rmi_fileservice.server.IFile;
 
 import java.io.*;
 import java.rmi.NotBoundException;
@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
  * @student_id 15130173
  * @email 15130173@st.hcmuaf.edu.vn
  **/
-public class Client3 {
+public class Client2 {
 
     BufferedReader userIn;
     boolean isLogin;
@@ -24,13 +24,13 @@ public class Client3 {
     BufferedInputStream in;
     BufferedOutputStream out;
 
-    public Client3() {
+    public Client2() {
         userIn = new BufferedReader(new InputStreamReader(System.in));
         isLogin = false;
     }
 
     public static void main(String[] args) throws IOException, NotBoundException {
-        Client3 client = new Client3();
+        Client2 client = new Client2();
         client.start();
     }
 

@@ -1,4 +1,4 @@
-package practice1;
+package practice1_tcp_fileservice;
 
 import java.io.*;
 import java.net.Socket;
@@ -28,7 +28,10 @@ public class TheConnect extends Thread {
             while (true) {
                 try {
                     line = netIn.readUTF();
-                    if (line.trim().equals("QUIT")) break;
+                    if (line.trim().equals("QUIT")) {
+                        System.out.println(line);
+                        break;
+                    }
                     ;
                     StringTokenizer stringTokenizer = new StringTokenizer(line);
                     String command = stringTokenizer.nextToken();

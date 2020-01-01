@@ -1,4 +1,4 @@
-package practice1;
+package practice1_tcp_fileservice;
 
 import java.io.*;
 import java.net.Socket;

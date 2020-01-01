@@ -1,4 +1,4 @@
-package practice2.server;
+package practice2_rmi_fileservice.server;
 
 /**
  * @project network-programming

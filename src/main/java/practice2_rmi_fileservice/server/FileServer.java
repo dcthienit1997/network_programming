@@ -1,6 +1,5 @@
-package practice2.server;
+package practice2_rmi_fileservice.server;
 
-import java.io.File;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
