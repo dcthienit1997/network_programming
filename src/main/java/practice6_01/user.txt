@@ -1,0 +1,3 @@
+Pvtinh	pvtinhnlu	kcntt111	100
+Lphung	lphungnlu	kcntt222	150
+Nvan	nvannlu	kcntt000	200
