@@ -1,7 +1,5 @@
 package io;
 
-import fileclass.Lesson1;
-
 import java.io.File;
 import java.util.Objects;
 
@@ -56,8 +54,11 @@ public class Lession9 {
     }
 
     public static void main(String[] args) {
-        String path = "E:\\testNetworkProgramming\\week1-delete\\MaterialDesign\\Student Kits\\AI501";
-        String path2 = "E:\\testNetworkProgramming\\week1-delete\\MaterialDesign\\Student Kits\\AI502";
-        System.out.println(new Lession9().folderCopy(path, path2, false));
+        String path = "E:\\KLTN\\RAW_data\\OwnCollection\\non-vehicles\\Far";
+        String path2 = "E:\\KLTN\\PROCESSED_data\\non-vehicles\\back\\middle";
+        long starTime = System.currentTimeMillis();
+        System.out.println(new Lession9().folderCopy(path, path2, true));
+        long endTime = System.currentTimeMillis();
+        System.out.println(endTime - starTime);
     }
 }

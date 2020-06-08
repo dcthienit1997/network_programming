@@ -32,6 +32,15 @@ public class Lession8 {
         }
     }
 
+    public static void main(String[] args) throws IOException {
+        String source = "";
+        String destination = "D:\\data-camer-trip2";
+        long beginTime = System.currentTimeMillis();
+        System.out.println(new Lession8().fileCopy(source, destination, true));
+        long endTime = System.currentTimeMillis();
+        System.out.println("Time:  " + (endTime - beginTime) + " ms");
+    }
+
     private boolean copy(File source, File destination) {
         try {
             FileInputStream fis = new FileInputStream(source);
@@ -47,19 +56,11 @@ public class Lession8 {
             bos.close();
             bis.close();
 
+            System.out.println("done");
             return true;
         } catch (IOException e) {
             return false;
         }
 
-    }
-
-    public static void main(String[] args) throws IOException {
-        String source = "E:\\testNetworkProgramming\\week1-delete\\MaterialDesign\\Student Kits\\AI501\\AI502.pdf";
-        String destination = "E:\\testNetworkProgramming\\week1-delete\\MaterialDesign\\Student Kits\\AI501";
-        long beginTime = System.currentTimeMillis();
-        System.out.println(new Lession8().fileCopy(source, destination, true));
-        long endTime = System.currentTimeMillis();
-        System.out.println("Time:  " + (endTime - beginTime) + " ms");
     }
 }
