@@ -1,9 +1,5 @@
 package practice4_tcp_dtb_atm;
 
-import org.apache.xmlbeans.impl.regex.REUtil;
-import org.apache.xmlbeans.impl.xb.xsdschema.Facet;
-import sun.org.mozilla.javascript.internal.ast.NewExpression;
-
 import java.io.*;
 import java.net.Socket;
 import java.sql.SQLException;
