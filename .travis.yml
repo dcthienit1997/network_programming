@@ -1,9 +1,11 @@
 language: java
 jdk: oraclejdk9
 
-install: true
-script: ./mvnw clean install
+sudo: false
 
 cache:
   directories:
     - $HOME/.m2
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
